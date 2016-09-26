@@ -1,0 +1,60 @@
+description = "Default layout"
+
+[session]
+security = "all"
+==
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | octobercms.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>{{ this.theme.site_name }} - {{ this.page.title }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Metadata -->
+    <meta name="title" content="{% if this.page.meta_title %}{{ this.page.meta_title }}{% else %}{{ this.theme.meta_title }}{% endif %}">
+    <meta name="keywords" content="{{ this.theme.meta_keywords }}">
+    <meta name="description" content="{% if this.page.meta_description %}{{ this.page.meta_description }}{% else %}{{ this.theme.meta_description }}{% endif %}">
+
+    <!--[if lte IE 8]><script src="{{ 'assets/js/ie/html5shiv.js'| theme}}"></script><![endif]-->
+
+    <link rel="stylesheet" href="{{ 'assets/css/main.css'| theme}}" />
+
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css'| theme}}" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css'| theme}} /><![endif]-->
+
+    <!-- Extra styles -->
+    {% styles %}
+
+    <!-- Inline styles -->
+    <style>{% placeholder inline_styles %}</style>
+</head>
+<body>
+
+    {% partial 'header' %}
+
+    {%  page %}
+
+    {% partial 'footer' %}
+
+    <!-- Scripts -->
+    <script src="{{ 'assets/js/jquery.min.js'| theme}}"></script>
+    <script src="{{ 'assets/js/jquery.scrolly.min.js'| theme}}"></script>
+    <script src="{{ 'assets/js/skel.min.js'| theme}}"></script>
+    <script src="{{ 'assets/js/util.js'| theme}}"></script>
+    <!--[if lte IE 8]><script src="{{ 'assets/js/ie/respond.min.js'| theme}}"></script><![endif]-->
+    <script src="{{ 'assets/js/main.js'| theme}}"></script>
+
+    <!-- OctoberCMS Ajax Framework and extras -->
+    {% framework extras %}
+
+    <!-- Extra -->
+    {% scripts %}
+
+    <!-- Inline scripts -->
+    <script>{% placeholder inline_scripts %}</script>
+</body>
+</html>
