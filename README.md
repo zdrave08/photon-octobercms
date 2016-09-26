@@ -3,7 +3,7 @@ Photon HTML5UP Template & OctoberCMS Laravel Framework Theme
 
 Photon is a free HTML5 template from HTML5UP for creatives, with a simple and modern layout. Nice CSS3 animation added on each section scroll and navigation. This template uses jquery.js animation script to animate section elements. Ported for OctoberCMS.
 
-![Screenshot]()
+![Screenshot](https://github.com/zdrave08/photon-octobercms/blob/master/assets/images/theme-preview.png)
 
 LICENCE:
 --------
